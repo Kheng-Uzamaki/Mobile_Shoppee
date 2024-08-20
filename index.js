@@ -42,8 +42,7 @@ $(document).ready(function(){
     //new-phones owl carousel
     $("#new-phones .owl-carousel").owlCarousel({
       loop: true,
-      nav: true,
-      dots: false,
+      dots: true,
       responsive: {
         0: {
           items: 1,
@@ -54,6 +53,21 @@ $(document).ready(function(){
         1000: {
           items: 5,
         },
+      },
+    });
+
+    //blog owl-carousel
+    $("#blogs .owl-carousel").owlCarousel({
+      loop: true,
+      nav: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 3,
+        }
       },
     });
 
