@@ -25,7 +25,7 @@ $(document).ready(function(){
                 items: 5
             }
         }
-    })
+    });
 
     // isotope filter
     var $grid = $(".grid").isotope({
@@ -37,6 +37,24 @@ $(document).ready(function(){
     $(".button-group").on("click", "button", function(){
         var filterValue = $(this).attr('data-filter');
         $grid.isotope({ filter: filterValue});
+    });
+
+    //new-phones owl carousel
+    $("#new-phones .owl-carousel").owlCarousel({
+      loop: true,
+      nav: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 3,
+        },
+        1000: {
+          items: 5,
+        },
+      },
     });
 
 })
