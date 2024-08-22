@@ -151,7 +151,7 @@
                   <!-- product qty -->
                   <div class="qty d-flex pt-2">
                     <div class="d-flex font-rale w-25">
-                      <button class="qty-up border bg-light">
+                      <button class="qty-up border bg-light" data-id="pro1">
                         <i class="fas fa-angle-up"></i>
                       </button>
                       <input
@@ -160,8 +160,9 @@
                         disabled
                         value="1"
                         placeholder="1"
+                        data-id="pro1"
                       />
-                      <button class="qty-down border bg-light">
+                      <button class="qty-down border bg-light" data-id="pro1">
                         <i class="fas fa-angle-down"></i>
                       </button>
                     </div>
@@ -208,7 +209,7 @@
                   <!-- product qty -->
                   <div class="qty d-flex pt-2">
                     <div class="d-flex font-rale w-25">
-                      <button class="qty-up border bg-light">
+                      <button class="qty-up border bg-light" >
                         <i class="fas fa-angle-up"></i>
                       </button>
                       <input
@@ -217,6 +218,7 @@
                         disabled
                         value="1"
                         placeholder="1"
+
                       />
                       <button class="qty-down border bg-light">
                         <i class="fas fa-angle-down"></i>
@@ -236,7 +238,15 @@
               </div>
               <!-- !cart items -->
             </div>
-            <div class="col-3"></div>
+            <div class="col-3">
+                <div class="sub-total border text-center mt-2">
+                    <h6 class="font-rale font-size-12 text-success py-3"><i class="fas fa-check"></i>Your order is eligible for FREE Delivery</h6>
+                    <div class="border-top py-4">
+                        <h5 class="font-baloo font-size-20">Subtotal (2 items): &nbsp;<span class="text-danger">$<span class="text-danger" id="deal-price">299.00</span></span></h5>
+                        <button type="submit" class="btn btn-warning mt-3">Proceed to Buy</button>
+                    </div>
+                </div>
+            </div>
           </div>
           <!-- !shopping cart item -->
         </div>
@@ -246,7 +256,7 @@
 
       <!-- New Phones -->
       <section id="new-phones">
-        <div class="container">
+        <div class="container py-5">
           <h4 class="font-rubik font-size-20">New Phones</h4>
           <hr />
           <!-- Owl Carousel -->
